@@ -1,0 +1,14 @@
+.footer {
+    background: #5573a0;
+    gap: 1.2rem;
+}
+
+//media queries
+@media (max-width: 768px) {
+ .paragraph{
+    font-size: 30px;
+ }
+    }
+
+
+    //flex justify-between dark:text-red-300 bg-gray-400 dark:bg-gray-600 p-5 text-white text-2xl font-extralight font-semibold text-center items-center
