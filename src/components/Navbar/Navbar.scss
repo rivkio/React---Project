@@ -4,7 +4,6 @@
   justify-content: space-between;
   margin-top: 30px;
   align-items: center;
-
   .nav-left {
     display: flex;
     align-items: center;
@@ -14,36 +13,16 @@
     flex-direction: row;
     z-index: 1;
     transition: 0.5s;
-/* 
-    .burger-icon {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
-
-    .menu-links {
-      display: flex;
-      gap: 1.2rem;
-      align-items: center;
-
-      &.open {
-        display: block;
-      } */
     }
   }
-
   .nav-right {
     display: flex;
     gap: 1rem;
     align-items: center;
   }
-
   .user-menu {
     position: relative;
     display: inline-block;
-
     .user-name-button {
       background: none;
       border: none;
@@ -52,14 +31,12 @@
       display: flex;
       align-items: center;
     }
-
     .user-menu-content {
       display: none;
       position: absolute;
       min-width: 160px;
       box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
       z-index: 1;
-
       button {
         padding: 12px 16px;
         text-decoration: none;
@@ -71,17 +48,13 @@
         background: none;
       }
     }
-
     &-content.open {
       display: block;
     }
   }
-
   .dropdown-icon {
     margin-left: 8px;
   }
-/* } */
-
 .hamburger {
   position: relative;
   width: 30px;
@@ -93,7 +66,6 @@
   transition: 0.3s;
   margin-left: 10px;
 }
-
 .hamburger::before,
 .hamburger::after {
   content: "";
@@ -104,17 +76,14 @@
   border-radius: 10px;
   transition: 0.3s;
 }
-
 .hamburger::before {
   top: -10px;
   width: 20px;
 }
-
 .hamburger::after {
   top: 10px;
   width: 25px;
 }
-
 .toggle-menu {
   position: absolute;
   width: 30px;
@@ -123,55 +92,23 @@
   cursor: pointer;
   opacity: 0;
 }
-
 .hamburger,
 .toggle-menu {
   display: none;
 }
-
 .site-navbar input:checked~.hamburger {
   background: transparent;
 }
-
 .site-navbar input:checked~.hamburger::before {
   top: 0;
   transform: rotate(-45deg);
   width: 30px;
 }
-
 .site-navbar input:checked~.hamburger::after {
   top: 0;
   transform: rotate(45deg);
   width: 30px;
 }
-
 .site-navbar input:checked~.nav-left{
   left: 0;
-}
-
-@media (max-width: 768px) {
-
-  .hamburger,
-  .toggle-menu {
-    display: block;
-  }
-
-  .site-navbar .nav-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: -300px;
-    background-color: #ce98afea;
-    width: 150px;
-    height: 40%;
-    padding-top: 65px;
-    gap: 1rem;
-  }
-
-    .site-navbar .nav-left .menu-links {
-    width: 100%;
-    }
 }

@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+
+    .hamburger,
+    .toggle-menu {
+        display: block;
+    }
+
+    .site-navbar .nav-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        background-color: #ce98afea;
+        width: 150px;
+        height: 40%;
+        padding-top: 65px;
+        gap: 1rem;
+    }
+
+    .site-navbar .nav-left .menu-links {
+        width: 100%;
+    }
+}

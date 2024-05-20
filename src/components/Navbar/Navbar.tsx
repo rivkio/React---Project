@@ -5,6 +5,7 @@ import { useAuth } from "../../contexts/AuthContext";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import Search from "../Search/Search";
 import "./Navbar.scss";
+import "./Navbar-media.scss";
 
 const Navbar = () => {
   const { isLoggedIn, user, logout } = useAuth();
